@@ -19,7 +19,8 @@
     <p>A zero-dependency TypeScript utility for parsing and decoding Ontario Financial Information Return (FIR) Schedule, Line, and Column (SLC) codes.</p>
     
     <h2>Installation</h2>
-    <p>Clone the repository and integrate the TypeScript module directly into your ETL pipeline or data engineering stack.</p>
+    <p>Because FIR ETL pipelines often run in restricted or serverless environments (like Cloudflare Workers/D1), this is designed as a single-file, zero-dependency drop-in utility rather than an NPM package.</p>
+    <p>Simply download <code>ontario-fir-formatter.ts</code> from the root of this repository and place it directly into your project's source code folder.</p>
     
     <h2>Usage Example</h2>
     <pre><code>import { parseSLC, decodeCategory } from './ontario-fir-formatter';
