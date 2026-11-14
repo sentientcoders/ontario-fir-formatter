@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ontario FIR Formatter | Sentient Coders</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 40px auto; padding: 0 20px; }
+        h1, h2 { color: #111; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 4px; font-family: monospace; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 8px; overflow-x: auto; }
+        .credits { margin-top: 40px; padding-top: 20px; border-top: 1px solid #eaeaea; font-size: 0.9em; color: #555; }
+        a { color: #0366d6; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <h1>ontario-fir-formatter</h1>
+    <p>A zero-dependency TypeScript utility for parsing and decoding Ontario Financial Information Return (FIR) Schedule, Line, and Column (SLC) codes.</p>
+    
+    <h2>Installation</h2>
+    <p>Clone the repository and integrate the TypeScript module directly into your ETL pipeline or data engineering stack.</p>
+    
+    <h2>Usage Example</h2>
+    <pre><code>import { parseSLC, decodeCategory } from './ontario-fir-formatter';
+
+// Parse a raw string from the Ontario Open Data FIR CSVs
+const parsed = parseSLC("40 1199 01");
+const category = decodeCategory(parsed.schedule, parsed.line);
+
+console.log(category.lineDescription); 
+// Output: "Total Police Services"</code></pre>
+
+    <div class="credits">
+        <strong>About the Authors</strong><br>
+        This open-source utility was extracted from the data engineering pipeline powering <a href="https://taxwatchdog.ca">TaxWatchdog.ca</a>, an in-browser civic financial intelligence platform. It is maintained by <a href="https://sentientcoders.com">Sentient Coders</a>, an independent software studio focused on local-first and serverless data architectures.
+    </div>
+</body>
+</html>
