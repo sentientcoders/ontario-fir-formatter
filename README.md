@@ -5,11 +5,15 @@ A zero-dependency TypeScript utility for parsing and decoding Ontario Financial 
 ## Overview
 This open-source micro-utility was extracted from the data engineering pipeline powering [TaxWatchdog.ca](https://taxwatchdog.ca). It provides safe string parsing, validation, and category decoding for municipal financial datasets.
 
-## Why no NPM package?
-Because this utility is frequently used in heavily restricted or serverless ETL environments (such as Cloudflare Workers and D1), it is designed as a single-file, zero-dependency drop-in rather than a published NPM package. 
-
 ## Installation
-Simply download `ontario-fir-formatter.ts` and drop it directly into your project's utility folder.
+
+### Option 1: NPM (Recommended)
+Install the package via the standard NPM registry:
+bash
+npm install ontario-fir-formatter
+
+### Option 2: Manual Download
+Simply download ontario-fir-formatter.ts or ontario-fir-formatter.js from the root of this repository and place it directly into your project's source code folder.
 
 ## License
 MIT License. Maintained by [Sentient Coders](https://sentientcoders.com).
