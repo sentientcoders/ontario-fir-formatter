@@ -20,9 +20,15 @@
     
     <p><strong><a href="https://github.com/sentientcoders/ontario-fir-formatter">View Repository on GitHub</a></strong> | <strong><a href="https://raw.githubusercontent.com/sentientcoders/ontario-fir-formatter/refs/heads/main/ontario-fir-formatter.ts">Download .ts File</a></strong></p>
     
-    <h2>Installation</h2>
-    <p>Because FIR ETL pipelines often run in restricted or serverless environments (like Cloudflare Workers/D1), this is designed as a single-file, zero-dependency drop-in utility rather than an NPM package.</p>
-    <p>Simply download <code>ontario-fir-formatter.ts</code> from the root of this repository and place it directly into your project's source code folder.</p>
+<h2>Installation</h2>
+    
+    <h3>Option 1: NPM (Recommended)</h3>
+    <p>Install via the standard NPM registry:</p>
+    <pre><code>npm install ontario-fir-formatter</code></pre>
+    
+    <h3>Option 2: Manual Drop-in (For Serverless/Zero-Build)</h3>
+    <p>Because FIR ETL pipelines often run in restricted edge environments (like Cloudflare Workers/D1), this is also designed as a zero-dependency drop-in utility.</p>
+    <p>Simply download <code>ontario-fir-formatter.ts</code> or <code>ontario-fir-formatter.js</code> from the root of the repository and place it directly into your project's source code folder.</p>
     
     <h2>Usage Example</h2>
     <pre><code>import { parseSLC, decodeCategory } from './ontario-fir-formatter';
