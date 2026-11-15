@@ -1,0 +1,27 @@
+{
+  "name": "ontario-fir-formatter",
+  "version": "1.0.0",
+  "description": "Zero-dependency TypeScript utility for parsing and decoding Ontario Financial Information Return (FIR) SLC codes.",
+  "main": "ontario-fir-formatter.js",
+  "types": "ontario-fir-formatter.d.ts",
+  "scripts": {
+    "build": "tsc ontario-fir-formatter.ts --declaration"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sentientcoders/ontario-fir-formatter.git"
+  },
+  "homepage": "https://taxwatchdog.ca",
+  "keywords": [
+    "ontario",
+    "fir",
+    "municipal",
+    "finance",
+    "civic-tech",
+    "taxwatchdog",
+    "slc",
+    "etl"
+  ],
+  "author": "Sentient Coders <https://sentientcoders.com>",
+  "license": "MIT"
+}
